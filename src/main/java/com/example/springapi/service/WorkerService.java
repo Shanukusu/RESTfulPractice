@@ -14,7 +14,7 @@ public class WorkerService {
 
     public WorkerService() {
         workerList = new ArrayList<>();
-        Worker worker = new Worker(1, "Sara","Lala","12345","12.10.2022",10000);
+        Worker worker = new Worker(  "Sara","Lala","12345","12.10.2022",10000);
 
         workerList.add(worker);
     }

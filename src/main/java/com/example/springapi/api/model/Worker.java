@@ -1,16 +1,22 @@
 package com.example.springapi.api.model;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class Worker {
 
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String name;
     private String surname;
     private String pasportNumber;
     private String pasportDate;
     private double salary;
 
-    public Worker(int id, String name, String surname, String pasportNumber, String pasportDate, double salary){
-        this.id = id;
+    public Worker( String name, String surname, String pasportNumber, String pasportDate, double salary){
         this.name = name;
         this.surname = surname;
         this.pasportNumber = pasportNumber;
@@ -18,13 +24,15 @@ public class Worker {
         this.salary = salary;
     }
 
-    public int getId(){
+    public Long getId(){
         return id;
     }
 
+    /*
     public void setId(int id){
         this.id = id;
     }
+    */
 
     public String getName(){
         return name;
