@@ -1,7 +1,7 @@
-package com.example.springapi.api.controller;
+package com.example.springapi.controller;
 
-import com.example.springapi.api.model.Worker;
-import com.example.springapi.api.repo.WorkerRepository;
+import com.example.springapi.entity.Worker;
+import com.example.springapi.repository.WorkerRepository;
 import com.example.springapi.service.WorkerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
@@ -38,4 +38,5 @@ public class WorkerController {
         model.addAttribute("workers",workers);
         return "workers";
     }
+
 }

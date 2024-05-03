@@ -1,6 +1,6 @@
 package com.example.springapi.service;
 
-import com.example.springapi.api.model.Worker;
+import com.example.springapi.entity.Worker;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -14,9 +14,9 @@ public class WorkerService {
 
     public WorkerService() {
         workerList = new ArrayList<>();
-        Worker worker = new Worker(  "Sara","Lala","12345","12.10.2022",10000);
+        //Worker worker = new Worker(  "Sara","Lala","12345","12.10.2022",10000);
 
-        workerList.add(worker);
+        //workerList.add(worker);
     }
 
     public Optional<Worker> getWorker (int id){
