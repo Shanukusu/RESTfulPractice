@@ -24,4 +24,11 @@ public class Worker {
     private String passportDate;
     private double salary;
 
+    public Worker(String name, String surname, String passportNumber, String passportDate, double salary) {
+        this.name = name;
+        this.surname = surname;
+        this.passportNumber = passportNumber;
+        this.passportDate = passportDate;
+        this.salary = salary;
+    }
 }
