@@ -13,7 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Worker {
+public class WorkerEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,7 +24,7 @@ public class Worker {
     private String passportDate;
     private double salary;
 
-    public Worker(String name, String surname, String passportNumber, String passportDate, double salary) {
+    public WorkerEntity(String name, String surname, String passportNumber, String passportDate, double salary) {
         this.name = name;
         this.surname = surname;
         this.passportNumber = passportNumber;
